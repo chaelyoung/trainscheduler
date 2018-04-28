@@ -1,0 +1,26 @@
+body {
+    background-image: url("../images/trainbg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#name {
+    font-size: 10px;
+    font-weight: bold;
+}

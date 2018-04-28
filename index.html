@@ -21,6 +21,9 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=|Luckiest+Guy|Patua+One|Satisfy" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,6 +31,7 @@
     <!-- Moment.js CDN -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
+    <!--
     <div class="jumbotron p-4 text-center">
         <h1 class="display-4">ChooChooPalooza Train Scheduler</h1>
         <p class="lead">"Are you afraid of flying? Do you hate the fatigue of driving long hours to reach your destination? Is walking not
@@ -38,6 +42,22 @@
         <hr class="my-3">
         <p class="h6">FOR AUTHORIZED USERS ONLY:</p>
         <p>Review the table below to see the current schedules, then modify them as needed.</p>
+    </div>
+    -->
+
+    <div class="card p-3 bg-danger text-light border-0">
+        <h6>"Are you afraid of flying? Do you hate the fatigue of driving long hours to reach your destination? Is walking not an option? If so, stay grounded, on track, and travel with us by train!" <span id="name">- Johnnio Rails, Founder/CEO of ChooChooPalooza Rail Comany Inc.</span></h6>
+    </div>
+
+    <div class="card bg-transparent p-5 m-0 border-0 text-center" id="top">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="logo">ChooChooPalooza® Train Scheduler</h1>
+                <hr class="my-3">
+                <h5>FOR AUTHORIZED USE ONLY!</h5>
+                <p>Authorized users should review the table below for the current schedules. If changes are required, input the information into the text field and click 'submit'. The data will go live once submitted.</p>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -108,7 +128,7 @@
                         <label for="">Frequency (minutes)</label>
                         <input type="number" class="form-control" id="inputTrainFrequency" placeholder="15">
                     </div>
-                    <button type="submit" class="btn btn-primary" id="addTrainButton">Submit</button>
+                    <button type="submit" class="btn btn-danger" id="addTrainButton">Submit</button>
                 </form>
             </div>
         </div>
