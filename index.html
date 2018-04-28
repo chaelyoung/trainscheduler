@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <!-- CSS internal sheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <!-- Firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+    <!-- jQuery CDN -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Moment.js CDN -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <div class="jumbotron p-4 text-center">
+        <h1 class="display-4">ChooChooPalooza Train Scheduler</h1>
+        <p class="lead">"Are you afraid of flying? Do you hate the fatigue of driving long hours to reach your destination? Is walking not
+            an option? If so, stay grounded, on track, and travel with us by train!"</p>
+        <footer class="blockquote-footer">Johnnie Rails
+            <cite title="Source Title">Founder/CEO of ChooChooPalooza Rail Company Inc.</cite>
+        </footer>
+        <hr class="my-3">
+        <p class="h6">FOR AUTHORIZED USERS ONLY:</p>
+        <p>Review the table below to see the current schedules, then modify them as needed.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <table class="table table-borderless table-striped table-hover" id="trainSchedule">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Placeholder train scheudles. JS code will input info here
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    End of placeholder train schedules -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card mt-3 mb-5">
+            <div class="card-header">
+                Add Train
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="">Train Name</label>
+                        <input type="text" class="form-control" id="inputTrainName" placeholder="Rocky Express">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Destination</label>
+                        <input type="text" class="form-control" id="inputDestination" placeholder="Patagonia">
+                    </div>
+                    <div class="form-group">
+                        <label for="">First Train Time (HH:MM - Military Time)</label>
+                        <input type="text" class="form-control" id="inputTime" placeholder="19:25">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Frequency (minutes)</label>
+                        <input type="number" class="form-control" id="inputTrainFrequency" placeholder="15">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="addTrainButton">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS, & Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <!-- Javascript internal sheet -->
+    <script src="assets/javascript/main.js"></script>
+
+</body>
+
+</html>
